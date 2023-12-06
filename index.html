@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio web</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="img/icon1.png">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Developer</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EDUCACIÓN</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto perfil.jpg" alt="">
+            </div>
+            <h1>Enrique Montes</h1>
+            <h2>Ingeniero de Software</h2>
+            <div class="redes">
+                <a href="https://wa.me/524423948229?text=Esto es una prueba de wsp"><i class="fa-brands fa-whatsapp" style="color: #59ff00;"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="mailTo:enrique_.montes@outlook.com"><i class="fa-regular fa-envelope" style="color: #ff0000;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy <span>Enrique Montes</span> estudiante de la carrera Ingeniería de Software, tengo conocimiento en
+                Desarrollo Web,  Diseño de Aplicaicones Móviles (Flutter), Figma, MySQL, JAVA y JavaScript. Soy autodidacta, 
+                me gusta estar aprendiendo constantemente para así ampliar mi conocimiento en las tecnologías de hoy en día.</p>
+                <br>
+                <br>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <br>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (442) 394 8229
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            enrique_.montes@outlook.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>DEVELOPER</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv">
+                <button>
+                    <a href="./assets/CV_Enrique_Montes .pdf" aria-label="Descargar curriculum"
+                            class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <!--Descargar CV <i class="fa-solid fa-download"></i>-->
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+        <div class="inner">
+            <div class="header">
+                <h2>Skills</h2>
+            </div>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <i class="fa-brands fa-html5" style="color: #ff6600;"></i>
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <img src="img/icons8-javascript-48.png">
+                        </div>
+                        <h3>Javascript</h3>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <img src="img/flutter.png">
+                        </div>
+                        <h3>Flutter</h3>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <img src="img/mysql.png">
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-tittle">
+                        <div class="img">
+                            <img src="img/java.png">
+                        </div>
+                        <h3>Java</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION EDUCACIÖN -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Educación</h2>
+            <br>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Preparatoria</h4>
+                        <span class="casa">Universidad Marista de Querétaro</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Universidad</h4>
+                        <span class="casa">Universidad Autónoma de Querétaro</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Prestador de Servicio Social</h4>
+                        <span class="casa">Universidad Autónoma de Querétaro</span>
+                        <span class="fecha">ago 2022 - feb 2023</span>
+                        <p>Trabaje en un proyecto que consistía en crear una biblioteca digital para la
+                            institución, el cual consiste en que los usuarios puedan tener acceso a
+                            libros, PDF's o tesis y así poder descargar el que les sea útil. Como
+                            también poder subir, actualizar o eliminar un archivo siempre y cuando
+                            sea del mismo autor.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">Luveka Plastic</span>
+                        <span class="fecha">nov 2022</span>
+                        <p>En este proyecto desarrolle una página web para la empresa, el cual
+                            solamente requerían que se dieran a conocer y así mismo sus puntos más
+                            importantes como: Venta, Compra y giro de la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo móvil (Flutter)</h4>
+                        <span class="casa">ICyTESI</span>
+                        <span class="fecha">feb 2023 - jul 2023</span>
+                        <p>Se trabajo en el diseño y creación de una aplicación móvil el cuál tenia 
+                            cumplir con el requisito de mostrar los datos comúnes por el cuál se 
+                            desarrollo esta aplicación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PROYECTOS-->
+    <section id="proyectos" class=" content proyectos">
+        <h1>Proyectos</h1>
+            <div class="content__proyectos" data-proyectos>
+                <div class="card__proyecto">
+                    <!--INICIO de Tarjeta 1-->
+                    <div class="imagen__card">
+                        <img src="img/coffee shop.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">Blog de Café</h2>
+                        <!-- <p>Página web para buscar pokemon, usando la pokeAPI, es resposive y fue construida con las siguientes tecnologias:</p> -->
+                        <p>
+                            Página web sobre una cafetería el cual tiene la opción de dar cursos y talleres del mismo. <br>
+                            Las tecnologías usadas fueron:
+                        </p>
+                        <div class="lenguajes">
+                            <!--<div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>-->
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">CSS3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="https://github.com/Enrique-Montes/BlogDeCafe.github.io/tree/main/Blog%20de%20Caf%C3%A9/blogdecafe_fin">Repositorio</a>
+                            <a href="https://mellifluous-fenglisu-a9bdb2.netlify.app/">Página</a>
+                        </div>
+                    </div>
+                </div>  
+                <!--FIN Tarjeta 1-->
+
+                <div class="card__proyecto">
+                    <div class="imagen__card">
+                        <img src="img/ejemplo2.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">AluraFlix </h2>
+                        <p>Sitio web para ver videos respecto a Alura, responsivo y fue construida con las siguientes
+                            tecnologías :
+                        </p>
+                        <div class="lenguajes">
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="#" target="_blank">Repositorio</a>
+                            <a href="#" target="_blank">Pagina </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card__proyecto">
+                    <div class="imagen__card">
+                        <img src="img/ejemplo4.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">AluraFlix </h2>
+                        <p>Sitio web para ver videos respecto a Alura, responsivo y fue construida con las siguientes
+                            tecnologías :
+                        </p>
+                        <div class="lenguajes">
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="#" target="_blank">Repositorio</a>
+                            <a href="#" target="_blank">Pagina </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card__proyecto">
+                    <div class="imagen__card">
+                        <img src="img/ejemplo3.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">AluraFlix </h2>
+                        <p>Sitio web para ver videos respecto a Alura, responsivo y fue construida con las siguientes
+                            tecnologías :
+                        </p>
+                        <div class="lenguajes">
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="#" target="_blank">Repositorio</a>
+                            <a href="#" target="_blank">Pagina </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card__proyecto">
+                    <div class="imagen__card">
+                        <img src="img/ejemplo.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">AluraFlix </h2>
+                        <p>Sitio web para ver videos respecto a Alura, responsivo y fue construida con las siguientes
+                            tecnologías :
+                        </p>
+                        <div class="lenguajes">
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="#" target="_blank">Repositorio</a>
+                            <a href="#" target="_blank">Pagina </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__proyecto">
+                    <div class="imagen__card">
+                        <img src="img/ejemplo.jpeg" alt="">
+                    </div>
+                    <div class="descrip__card">
+                        <h2 class="titulo__card">AluraFlix </h2>
+                        <p>Sitio web para ver videos respecto a Alura, responsivo y fue construida con las siguientes
+                            tecnologías :
+                        </p>
+                        <div class="lenguajes">
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <p class="titlulo__html">Html5</p>
+                            </div>
+                            <div> <i class="fa-brands fa-css3-alt"></i>
+                                <p class="titulo__css">Css3</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-js"></i>
+                                <p class="titulo__js">JavaScript</p>
+                            </div>
+
+                        </div>
+                        <div class="ir_proyecto">
+                            <a href="#" target="_blank">Repositorio</a>
+                            <a href="#" target="_blank">Pagina </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+   
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="redes">
+            <h3>Redes Sociales</h3>
+                <div class="icons-redes">
+                    <a href="https://wa.me/524423948229?text=Esto es una prueba de wsp"><i class="fa-brands fa-whatsapp" style="color: #59ff00;"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailTo:enrique_.montes@outlook.com"><i class="fa-regular fa-envelope" style="color: #ff0000;"></i></a>
+                </div>
+        </div>
+
+        <div class="contactos">
+            <h3>Contactame</h3>
+            <!--<div class="phone-number">
+                <i class="fa-solid fa-phone"></i>
+                <p>(442) 3948229</p>
+            </div>-->
+            <a href="mailTo:enrique_.montes@outlook.com"
+                class="mail">
+                <span>
+                    <i class="fa-solid fa-message"></i>
+                </span>Escríbeme
+            </a>
+        </div>
+
+        <div class="servicios">
+            <h3>Mis Servicios</h3>
+            <p>Desarrollo web</p>
+            <p>Desarrollo móvil</p>
+            <p>Diseñador UI /UX</p>
+        </div>
+    </section>
+    
+ 
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <p>Creado por Enrique Montes (2023) ©</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<!--JS-->
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+</html>
